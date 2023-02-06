@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CBT</string>
+    <string name="welcome_text">Selamat datang di Sistem Ujian Berbasis Komputer SMKN 1 Cimahi. Klik mulai untuk melanjutkan.</string>
+    <string name="masuk_text">Masuk dengan meng-inputkan NIS dan Password yang telah diberikan oleh pengajar.</string>
+</resources>

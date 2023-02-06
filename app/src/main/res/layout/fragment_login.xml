@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.auth.LoginFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="30dp">
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="20dp"
+            android:src="@drawable/cbt"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masuk"
+            android:fontFamily="@font/googlesans_bold"
+            android:textColor="@color/textHeader"
+            android:textSize="32sp"/>
+
+        <com.airbnb.lottie.LottieAnimationView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="40dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/work_hard"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masuk untuk melanjutkan"
+            android:fontFamily="@font/googlesans_bold"
+            android:textColor="@color/textHeader"
+            android:textSize="24sp"
+            android:layout_marginVertical="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:text="@string/masuk_text"
+            android:fontFamily="@font/googlesans_regular"
+            android:textColor="@color/textBodyPrimary"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-MAIL"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/googlesans_regular"
+            android:textColor="@color/mainColorBlue"
+            android:textSize="13sp"/>
+
+        <EditText
+            android:id="@+id/inputEmail"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/my_input_layout"
+            android:fontFamily="@font/googlesans_medium"
+            android:textColor="@color/textHeader"
+            android:textSize="20sp"
+            android:drawableEnd="@drawable/ic_nis"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:text="PASSWORD"
+            android:fontFamily="@font/googlesans_regular"
+            android:textColor="@color/mainColorBlue"
+            android:textSize="13sp"/>
+
+        <EditText
+            android:id="@+id/inputPassword"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/my_input_layout"
+            android:fontFamily="@font/googlesans_medium"
+            android:inputType="textPassword"
+            android:textColor="@color/textHeader"
+            android:textSize="20sp"
+            android:drawableEnd="@drawable/ic_eco"
+            android:padding="10dp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.button.MaterialButton xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/buttonLogin"
+                android:layout_width="120dp"
+                android:layout_height="55dp"
+                android:layout_alignParentBottom="true"
+                android:backgroundTint="@color/mainColorBlue"
+                android:fontFamily="@font/googlesans_medium"
+                android:text="Masuk"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:cornerRadius="8dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</FrameLayout>
